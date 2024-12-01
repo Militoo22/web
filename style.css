@@ -1,0 +1,272 @@
+/* Configuración global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1E1E1E;
+    color: #fff;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-top: 80px; /* Espacio para el header fijo */
+}
+
+a {
+    text-decoration: none;
+    color: #00bcd4;
+}
+
+a:hover {
+    color: #ff5722;
+}
+
+/* Header */
+header {
+    background: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Secciones */
+.section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sección de Inicio */
+#inicio {
+    background-color: #212121;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#inicio h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    font-size: 18px;
+    color: #b0b0b0;
+    line-height: 1.8;
+}
+
+#inicio .main-image {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Entradas */
+#entradas {
+    background-color: #121212;
+}
+
+article {
+    background-color: #333;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+}
+
+article h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+article img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+article p {
+    font-size: 18px;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}
+
+article b {
+    color: #ff5722;
+}
+
+/* Sección Acerca de mí */
+#acerca-de-mi {
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+}
+
+#acerca-de-mi .profile-image {
+    border-radius: 150%;
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 5px;
+}
+
+#acerca-de-mi h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#acerca-de-mi p {
+    font-size: 18px;
+    color: #b0b0b0;
+    line-height: 1.8;
+}
+
+/* Sección Contacto */
+#contacto {
+    background-color: #121212;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+form {
+    background-color: #333;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff5722;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff9800;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    #inicio .main-image {
+        width: 100%;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
